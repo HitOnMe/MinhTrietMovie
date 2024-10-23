@@ -1,0 +1,61 @@
+.date-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #222;
+  padding: 10px;
+}
+.date-selector .date-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.date-selector .date-items .date-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+}
+.date-selector .date-items .date-item .day {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.date-selector .date-items .date-item .date {
+  font-size: 0.9rem;
+}
+.date-selector .date-items .date-item.active {
+  background-color: #ff6347;
+  color: #fff;
+}
+.date-selector .nav-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.date-selector .nav-btn.prev {
+  left: 10px;
+}
+.date-selector .nav-btn.next {
+  right: 10px;
+}/*# sourceMappingURL=calendar.css.map */

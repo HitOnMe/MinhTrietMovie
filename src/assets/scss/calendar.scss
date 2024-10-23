@@ -1,0 +1,61 @@
+.date-selector {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222;
+    padding: 10px;
+  
+    .date-items {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+  
+      .date-item {
+        flex: 0 0 auto;
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-color: #444;
+        color: #fff;
+        
+        .day {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+  
+        .date {
+          font-size: 0.9rem;
+        }
+  
+        &.active {
+          background-color: #ff6347;
+          color: #fff;
+        }
+      }
+    }
+  
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #fff;
+  
+      &.prev {
+        left: 10px;
+      }
+  
+      &.next {
+        right: 10px;
+      }
+    }
+  }
+  
