@@ -13,7 +13,6 @@ export default function UserTab() {
       .then((res) => {
         // if (res.data.content.maLoaiNguoiDung === "QuanTri") {
         // }
-        console.log(res.data.content);
         setListUser(res.data.content);
       })
       .catch((err) => {
