@@ -6,11 +6,11 @@ import {
   VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
-import AdminHeader from "../../pages/AdminPage/AdminHeader";
 import UserTab from "../../pages/AdminPage/UserTab";
 import Dashboard from "../../pages/AdminPage/Dashboard";
 import MovieTab from "../../pages/AdminPage/MovieTab";
 import TheatresTab from "../../pages/AdminPage/TheatresTab";
+import AdminHeader from "./AdminHeader";
 const { Content, Footer, Sider } = Layout;
 const siderStyle = {
   height: "100vh",

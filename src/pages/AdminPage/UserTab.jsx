@@ -28,12 +28,12 @@ export default function UserTab() {
     try {
       let result = await adminService.xoaNguoiDung(taiKhoan);
       console.log(taiKhoan);
-      message.success("Xóa thành công");
+      message.success("Xóa người dùng thành công");
       //gọi lại api lấy danh sách user sau khi xóa thành công, vì trang không tự động load lại
       fetchListUser();
     } catch (error) {
       console.log(error);
-      message.error("Xóa thất bại");
+      message.error("Xóa người dùng thất bại");
     }
   };
 

@@ -20,5 +20,7 @@ export let http = Axios.create({
   baseURL: baseUrl,
   headers: {
     TokenCybersoft: token,
+    Authorization:
+      "bearer " + JSON.parse(localStorage.getItem("USER_LOGIN"))?.accessToken,
   },
 });

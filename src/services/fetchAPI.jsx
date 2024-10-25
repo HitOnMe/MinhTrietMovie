@@ -33,4 +33,7 @@ export let adminService = {
   layDanhSachPhim: () => {
     return http.get("/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP01");
   },
+  xoaPhim: (maPhim) => {
+    return http.delete(`/api/QuanLyPhim/XoaPhim/?maPhim=${maPhim}`);
+  },
 };
